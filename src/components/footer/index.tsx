@@ -3,9 +3,12 @@ import React from 'react';
 
 import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
+export const revalidate = 60 * 60 * 24;
+
 const Footer = () => {
     const date = new Date();
     const year = date.getFullYear();
+
     return (
         <footer className='mt-[70px] border-t bg-card px-6 py-5 text-center'>
             <div className='mb-3'>
