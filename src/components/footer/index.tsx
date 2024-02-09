@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
     const date = new Date();
@@ -26,24 +26,13 @@ const Footer = () => {
                     </li>
                     <li className='rounded-full border-2 border-primary p-2'>
                         <Link
-                            href='https://twitter.com/brijeshkum16'
+                            href='https://github.com/brijeshkumar16'
                             target='_blank'
                             rel='noopener noreferrer'
                             aria-label='Twitter'
                             className='text-[20px] text-primary'
                         >
-                            <FaTwitter />
-                        </Link>
-                    </li>
-                    <li className='rounded-full border-2 border-primary p-2'>
-                        <Link
-                            href='https://www.instagram.com/by16__/'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            aria-label='Twitter'
-                            className='text-[20px] text-primary'
-                        >
-                            <FaInstagram />
+                            <FaGithub />
                         </Link>
                     </li>
                 </ul>
