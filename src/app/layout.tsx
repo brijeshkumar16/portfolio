@@ -1,4 +1,5 @@
 import { Inter as FontSans } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 
 import { cn } from '@/lib/utils';
@@ -53,7 +54,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='en'>
             <body className={cn('min-h-screen font-sans antialiased', fontSans.variable)}>
-                <main>{children}</main>
+                <main>
+                    {children}
+                    <Analytics />
+                </main>
             </body>
         </html>
     );
