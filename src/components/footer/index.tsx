@@ -1,9 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
 
 import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-
-export const revalidate = 60 * 60 * 24;
 
 const Footer = () => {
     const date = new Date();

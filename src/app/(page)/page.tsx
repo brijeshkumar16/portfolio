@@ -3,7 +3,7 @@ import RecentWork from '@/components/home/recent-work';
 import Contact from '@/components/home/contact';
 import Landing from '@/components/home/landing';
 
-export default function Home() {
+const Home = () => {
     return (
         <div>
             <Landing />
@@ -12,4 +12,6 @@ export default function Home() {
             <Contact />
         </div>
     );
-}
+};
+
+export default Home;
