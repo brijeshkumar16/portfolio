@@ -24,7 +24,7 @@ const Landing = () => {
                         <ul className='list-disc pl-6'>
                             <li>
                                 Frontend: HTML5, CSS3, Tailwind CSS, SASS, JavaScript, TypeScript, ReactJS, NextJS,
-                                Redux, VueJS, NuxtJS, AntD, Material UI, shadcn/ui
+                                Redux, AntD, Material UI, shadcn/ui
                             </li>
                             <li>Backend: NodeJS, ExpressJS</li>
                             <li>Databases: MongoDB, PostgreSQL, MySQL</li>
