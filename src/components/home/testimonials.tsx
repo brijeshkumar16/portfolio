@@ -4,9 +4,9 @@ import React from 'react';
 const testimonials = [
     {
         id: 1,
-        name: 'Snazzerra',
-        img: '/testimonials/snazzerra.jpg',
-        profession: 'Software company',
+        name: 'Shreya Prajapati',
+        img: '/testimonials/shreya.jpg',
+        profession: 'Co-Founder & CEO at Snazzerra Apps LLP',
         description:
             "<p class='mb-2 text-sm'>We highly recommend Brijesh for his exceptional skills in software development. His proficiency in understanding complex problems and swiftly proposing effective solutions sets him apart.</p> <p class='mb-2 text-sm'>He is not only a talented developer but also a quick learner, consistently adapting to new technologies and methodologies. His commitment to excellence and innovative problem-solving make him an invaluable asset to any team </p> <p class='mb-2 text-sm'>With a proven track record of delivering high-quality software, he is a reliable and dedicated professional who brings enthusiasm and expertise to every project. We are confident in his ability to excel in any software development role.</p>",
     },
