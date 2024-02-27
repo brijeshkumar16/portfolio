@@ -4,14 +4,14 @@ import Contact from '@/components/home/contact';
 import Landing from '@/components/home/landing';
 
 const Home = () => {
-    return (
-        <div>
-            <Landing />
-            <RecentWork />
-            <Testimonials />
-            <Contact />
-        </div>
-    );
+  return (
+    <>
+      <Landing />
+      <RecentWork />
+      <Testimonials />
+      <Contact />
+    </>
+  );
 };
 
 export default Home;
