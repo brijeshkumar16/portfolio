@@ -30,7 +30,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className='mx-auto max-w-screen-xl px-6 pt-[120px]' id='testimonials'>
+    <div className='container pt-[120px]' id='testimonials'>
       <h2 className='mb-8 text-center text-4xl font-bold'>Testimonials</h2>
       <div className='grid grid-cols-1 gap-5 lg:grid-cols-3'>
         {testimonials.map((testimonial) => (

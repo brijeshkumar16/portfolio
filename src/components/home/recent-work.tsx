@@ -51,7 +51,7 @@ const projects = [
 
 const RecentWork = () => {
   return (
-    <div className='mx-auto max-w-screen-xl px-6 pt-[120px]' id='recent-work'>
+    <div className='container pt-[120px]' id='recent-work'>
       <h2 className='mb-8 text-center text-4xl font-semibold'>
         My Recent <span className='text-primary'>Work</span>
       </h2>
