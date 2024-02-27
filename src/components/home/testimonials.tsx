@@ -48,7 +48,7 @@ const Testimonials = () => {
               </div>
               <div>
                 <h2 className='text-lg font-bold text-primary'>{testimonial.name}</h2>
-                <p className='text-sm'>{testimonial.profession}</p>
+                <p className='text-xs md:text-sm'>{testimonial.profession}</p>
               </div>
             </div>
             <div className='mb-4' dangerouslySetInnerHTML={{ __html: testimonial.description }}></div>

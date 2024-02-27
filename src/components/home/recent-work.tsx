@@ -57,15 +57,8 @@ const RecentWork = () => {
       </h2>
       {projects.map((project) => (
         <div key={project.id} className='mt-10 w-full overflow-hidden rounded-lg border shadow-md'>
-          <div className='relative h-[550px] w-full'>
-            <Image
-              src={project.img}
-              alt={project.title}
-              fill
-              className='border-b object-cover'
-              sizes='100vw'
-              loading='lazy'
-            />
+          <div className='relative h-[150px] w-full md:h-[350px] lg:h-[600px]'>
+            <Image src={project.img} alt={project.title} fill className='border-b' sizes='100vw' loading='lazy' />
           </div>
           <div className='p-5'>
             <h3 className='mb-2 text-[20px] font-bold text-primary md:text-[25px]'>{project.title}</h3>
