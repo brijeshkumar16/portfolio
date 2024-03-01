@@ -54,19 +54,28 @@ const Header = ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => {
               <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M4 6h16M4 12h16m-7 6h7'></path>
             </svg>
             <div className='hidden items-center space-x-5 lg:flex'>
-              <p className={active === 'home' ? 'font-bold' : ''} onClick={() => scrollIntoView('#home')}>
+              <p
+                className={active === 'home' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
+                onClick={() => scrollIntoView('#home')}
+              >
                 Home
               </p>
-              <p className={active === 'recent-work' ? 'font-bold' : ''} onClick={() => scrollIntoView('#recent-work')}>
+              <p
+                className={active === 'recent-work' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
+                onClick={() => scrollIntoView('#recent-work')}
+              >
                 Recent work
               </p>
               <p
-                className={active === 'testimonials' ? 'font-bold' : ''}
+                className={active === 'testimonials' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
                 onClick={() => scrollIntoView('#testimonials')}
               >
                 Testimonials
               </p>
-              <p className={active === 'contact' ? 'font-bold' : ''} onClick={() => scrollIntoView('#contact')}>
+              <p
+                className={active === 'contact' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
+                onClick={() => scrollIntoView('#contact')}
+              >
                 Contact
               </p>
             </div>
@@ -97,18 +106,24 @@ const Header = ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => {
             </svg>
           </div>
           <div className='mt-8 flex flex-col items-center gap-5'>
-            <Link href='#home' className={active === 'home' ? 'font-bold' : ''} onClick={toggleMenu}>
+            <p className={active === 'home' ? 'cursor-pointer font-bold' : 'cursor-pointer'} onClick={toggleMenu}>
               Home
-            </Link>
-            <Link href='#recent-work' className={active === 'recent-work' ? 'font-bold' : ''} onClick={toggleMenu}>
+            </p>
+            <p
+              className={active === 'recent-work' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
+              onClick={toggleMenu}
+            >
               Recent work
-            </Link>
-            <Link href='#testimonials' className={active === 'testimonials' ? 'font-bold' : ''} onClick={toggleMenu}>
+            </p>
+            <p
+              className={active === 'testimonials' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
+              onClick={toggleMenu}
+            >
               Testimonials
-            </Link>
-            <Link href='#contact' className={active === 'contact' ? 'font-bold' : ''} onClick={toggleMenu}>
+            </p>
+            <p className={active === 'contact' ? 'cursor-pointer font-bold' : 'cursor-pointer'} onClick={toggleMenu}>
               Contact
-            </Link>
+            </p>
           </div>
         </div>
       </div>
