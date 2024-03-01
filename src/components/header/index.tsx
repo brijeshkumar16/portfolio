@@ -33,6 +33,11 @@ const Header = ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => {
     }
   };
 
+  const scrollMobile = (value: string) => {
+    scrollIntoView(value);
+    toggleMenu();
+  };
+
   return (
     <>
       <nav className={cn('fixed top-0 z-50 w-full border-b bg-card py-5', className)} {...props}>
@@ -106,22 +111,28 @@ const Header = ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => {
             </svg>
           </div>
           <div className='mt-8 flex flex-col items-center gap-5'>
-            <p className={active === 'home' ? 'cursor-pointer font-bold' : 'cursor-pointer'} onClick={toggleMenu}>
+            <p
+              className={active === 'home' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
+              onClick={() => scrollMobile('#home')}
+            >
               Home
             </p>
             <p
               className={active === 'recent-work' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
-              onClick={toggleMenu}
+              onClick={() => scrollMobile('#recent-work')}
             >
               Recent work
             </p>
             <p
               className={active === 'testimonials' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
-              onClick={toggleMenu}
+              onClick={() => scrollMobile('#testimonials')}
             >
               Testimonials
             </p>
-            <p className={active === 'contact' ? 'cursor-pointer font-bold' : 'cursor-pointer'} onClick={toggleMenu}>
+            <p
+              className={active === 'contact' ? 'cursor-pointer font-bold' : 'cursor-pointer'}
+              onClick={() => scrollMobile('#contact')}
+            >
               Contact
             </p>
           </div>
