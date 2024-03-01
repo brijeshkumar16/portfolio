@@ -1,21 +1,20 @@
 'use client';
 
+import { MoonIcon, SunIcon } from 'lucide-react';
 import React, { useState } from 'react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 
-import { MoonIcon, SunIcon } from 'lucide-react';
-
+import { cn, scrollIntoView } from '@/lib/utils';
 import useScroll from '@/hook/use-scroll';
 import { Button } from '../ui/button';
-import { cn } from '@/lib/utils';
-
-const menu = ['home', 'recent-work', 'testimonials', 'contact'];
 
 const Header = ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const active = useScroll(menu, 72);
+
   const { setTheme, theme, systemTheme } = useTheme();
+
+  const active = useScroll(['home', 'recent-work', 'testimonials', 'contact'], 10);
 
   const handleChangeTheme = () => {
     if ((theme === 'system' && systemTheme === 'dark') || theme === 'dark') {
@@ -55,18 +54,21 @@ const Header = ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => {
               <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M4 6h16M4 12h16m-7 6h7'></path>
             </svg>
             <div className='hidden items-center space-x-5 lg:flex'>
-              <Link href='#home' className={active === 'home' ? 'font-bold' : ''}>
+              <p className={active === 'home' ? 'font-bold' : ''} onClick={() => scrollIntoView('#home')}>
                 Home
-              </Link>
-              <Link href='#recent-work' className={active === 'recent-work' ? 'font-bold' : ''}>
+              </p>
+              <p className={active === 'recent-work' ? 'font-bold' : ''} onClick={() => scrollIntoView('#recent-work')}>
                 Recent work
-              </Link>
-              <Link href='#testimonials' className={active === 'testimonials' ? 'font-bold' : ''}>
+              </p>
+              <p
+                className={active === 'testimonials' ? 'font-bold' : ''}
+                onClick={() => scrollIntoView('#testimonials')}
+              >
                 Testimonials
-              </Link>
-              <Link href='#contact' className={active === 'contact' ? 'font-bold' : ''}>
+              </p>
+              <p className={active === 'contact' ? 'font-bold' : ''} onClick={() => scrollIntoView('#contact')}>
                 Contact
-              </Link>
+              </p>
             </div>
             <Button variant='link' size='icon' className='h-[20px] w-[20px]' onClick={handleChangeTheme}>
               <SunIcon className='h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />

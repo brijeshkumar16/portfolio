@@ -4,8 +4,8 @@ const clamp = (value: number) => Math.max(0, value);
 
 const isBetween = (value: number, floor: number, ceil: number) => value >= floor && value <= ceil;
 
-const useScroll = (ids: string[], offset: number = 0) => {
-  const [activeId, setActiveId] = useState('');
+const useScroll = <T extends string>(ids: T[], offset: number = 0) => {
+  const [activeId, setActiveId] = useState<T>(ids[0]);
 
   useLayoutEffect(() => {
     const listener = () => {
@@ -25,7 +25,7 @@ const useScroll = (ids: string[], offset: number = 0) => {
         })
         .find(({ top, bottom }) => isBetween(scroll, top, bottom));
 
-      setActiveId(position?.id || '');
+      setActiveId(position?.id || ids[0]);
     };
 
     listener();

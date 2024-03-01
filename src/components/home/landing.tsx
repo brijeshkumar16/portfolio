@@ -10,21 +10,17 @@ const Landing = () => {
         <div className='order-2 lg:order-1'>
           <h1 className='mb-4 text-3xl font-bold lg:text-4xl'>Hi! 👋 I&apos;m Brijeshkumar Yadav,</h1>
           <p className='mb-6 leading-relaxed'>
-            A passionate Full Stack Developer based in Valsad, Gujarat, India, with 2+ years of hands-on experience. I
-            specialize in creating seamless web applications, focusing on both user-friendly interfaces and robust
-            back-end systems. Dedicated to solving modern problems through creative and innovative software solutions.
+            A passionate Frontend Developer based in Valsad, Gujarat, India, with 2+ years of hands-on experience. I
+            specialize in crafting engaging user interfaces and delightful web experiences. Dedicated to solving modern
+            problems through creative and innovative frontend solutions.
           </p>
 
           <div className='mb-6'>
             <h2 className='mb-2 text-lg font-semibold text-primary'>My Skills</h2>
-            <ul className='list-disc pl-6'>
-              <li>
-                Frontend: HTML5, CSS3, Tailwind CSS, SASS, JavaScript, TypeScript, ReactJS, NextJS, Redux, AntD,
-                Material UI, shadcn/ui
-              </li>
-              <li>Backend: NodeJS, ExpressJS</li>
-              <li>Databases: MongoDB, PostgreSQL, MySQL</li>
-            </ul>
+            <p>
+              HTML5, CSS3, Tailwind CSS, SASS, JavaScript, TypeScript, ReactJS, NextJS, Redux, AntD, Material UI,
+              shadcn/ui
+            </p>
           </div>
 
           <div className='mb-6'>

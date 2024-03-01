@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import React from 'react';
 
@@ -10,7 +8,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className='mt-[70px] border-t bg-card px-6 py-5 text-center'>
+    <footer className='border-t bg-card px-6 py-5 text-center'>
       <div className='mb-3'>
         <ul className='flex justify-center gap-4'>
           <li className='rounded-full border-2 border-primary p-2'>

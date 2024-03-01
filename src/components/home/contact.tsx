@@ -23,7 +23,7 @@ const data = [
 
 const Contact = () => {
   return (
-    <div className='container pt-[120px]' id='contact'>
+    <div className='container py-[120px]' id='contact'>
       <div className='text-center'>
         <h1 className='mb-1 text-[25px] font-bold md:text-[35px]'>
           Get In <strong className='text-primary'>Touch</strong>

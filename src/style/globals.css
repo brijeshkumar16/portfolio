@@ -60,24 +60,3 @@
     scroll-behavior: smooth;
   }
 }
-
-/* testimonials */
-.testimonials-slider .slick-slide {
-  padding: 0 10px;
-}
-
-.testimonials-slider .slick-dots {
-  bottom: -46px !important;
-}
-
-/* next image custom css */
-.image-container {
-  position: relative;
-}
-.image-container .image {
-  overflow: hidden;
-  object-fit: contain;
-  width: 100% !important;
-  position: relative !important;
-  height: unset !important;
-}
