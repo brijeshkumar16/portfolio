@@ -1,8 +1,8 @@
 'use client';
 
 import { ThemeProvider } from '@/components/theme-provider';
-import Footer from '@/components/footer';
-import Header from '@/components/header';
+import Footer from '@/components/layout/footer';
+import Header from '@/components/layout/header';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (

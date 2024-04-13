@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: 'Frontend Developer | Brijeshkumar Yadav',
   },
   description:
-    "Hi! 👋 I'm Brijeshkumar Yadav, a passionate Frontend Developer based in Valsad, Gujarat, India, with 2+ years of hands-on experience in ReactJS and NextJS",
+    "Hi! 👋 I'm Brijeshkumar Yadav, a passionate Frontend Developer based in Valsad, Gujarat, India, with 3 years of hands-on experience in ReactJS and NextJS",
   keywords: ['Frontend Developer', 'ReactJS Developer', 'NextJS Developer'],
   authors: [{ name: 'Brijeshkumar Yadav', url: 'https://www.brijeshkumaryadav.com' }],
   robots: 'index, follow',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     description:
-      "Hi! 👋 I'm Brijeshkumar Yadav, a passionate Frontend Developer based in Valsad, Gujarat, India, with 2+ years of hands-on experience in ReactJS and NextJS",
+      "Hi! 👋 I'm Brijeshkumar Yadav, a passionate Frontend Developer based in Valsad, Gujarat, India, with 3 years of hands-on experience in ReactJS and NextJS",
     title: 'Frontend Developer | Brijeshkumar Yadav',
     url: 'https://brijeshkumaryadav.com/',
     siteName: 'Frontend Developer | Brijeshkumar Yadav',

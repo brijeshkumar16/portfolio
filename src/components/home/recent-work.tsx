@@ -10,19 +10,29 @@ const projects = [
     img: '/project/jalso.png',
     title: 'Jalso',
     description:
-      'Jalso is a comprehensive web application featuring an intuitive admin console with a user-friendly interface. Leveraging React and Node, I developed this project from the ground up, ensuring a seamless user experience and optimal performance. Jalso showcases my ability to create responsive web solutions and underscores my expertise in both front-end and back-end development.',
-    skills: [
-      'HTML5',
-      'CSS3',
-      'SaSS',
-      'JavaScript',
-      'TypeScript',
-      'React',
-      'Redux',
-      'AntD',
-      'Node',
-      'Feather',
-      'PostgreSQL',
+      'Built the entire "Jalso Admin Panel" web application using ReactJS. This panel simplifies music streaming management, offering intuitive controls for content, users, advertising, sections, reports, and notifications.',
+    skills: ['HTML5', 'CSS3', 'SaSS', 'JavaScript', 'React', 'Redux', 'AntD'],
+    keyFeatures: [
+      {
+        id: 1,
+        text: 'Insightful Dashboard: Real-time data for informed decisions.',
+      },
+      {
+        id: 2,
+        text: 'Content Management: Organize albums, songs, artists, and categories effortlessly.',
+      },
+      {
+        id: 3,
+        text: 'User Control: Manage app and admin users seamlessly.',
+      },
+      {
+        id: 4,
+        text: 'Strategic Advertising: Implement targeted ad campaigns.',
+      },
+      {
+        id: 5,
+        text: 'Real-time Engagement: Foster user interaction with instant notifications.',
+      },
     ],
     link: 'https://jalsoadmin.com',
   },
@@ -31,20 +41,26 @@ const projects = [
     img: '/project/bakoomba.png',
     title: 'Bakoomba',
     description:
-      'Bakoomba, featuring both Admin and User Consoles, is a comprehensive web application designed to empower fitness enthusiasts. I crafted this project with a focus on versatility, incorporating workout management, exercise tracking, authentication, and a media player. Furthermore, I prioritized code quality by adhering to industry best practices, ensuring a robust and maintainable system. Bakoomba exemplifies my proficiency in delivering feature-rich web applications while maintaining clean and structured code',
-    skills: [
-      'HTML5',
-      'CSS3',
-      'SaSS',
-      'JavaScript',
-      'TypeScript',
-      'React',
-      'Redux',
-      'AntD',
-      'Node',
-      'Feather',
-      'PostgreSQL',
+      "Bakoomba is a web application made with ReactJS that's all about helping people stay fit. Here's what it offers:",
+    keyFeatures: [
+      {
+        id: 1,
+        text: 'Home: Your starting point, offering various sections such as Nutrition Library, Program Library, and Workout Library for easy exploration.',
+      },
+      {
+        id: 2,
+        text: 'Workout Plans: Admins can craft personalized workout plans, accessible to users through the user panel.',
+      },
+      {
+        id: 3,
+        text: 'Sign-In: Securely log in to safeguard your data and receive tailored fitness recommendations.',
+      },
+      {
+        id: 4,
+        text: 'Videos: Access a collection of exercise videos to enhance your workout experience.',
+      },
     ],
+    skills: ['HTML5', 'CSS3', 'SaSS', 'JavaScript', 'React', 'Redux', 'AntD'],
     link: 'https://fitness.bakoomba.com/#/',
   },
 ];
@@ -63,6 +79,17 @@ const RecentWork = () => {
           <div className='p-5'>
             <h3 className='mb-2 text-[20px] font-bold text-primary md:text-[25px]'>{project.title}</h3>
             <p className='mb-4 text-sm'>{project.description}</p>
+            <h3 className='mb-2 text-[18px] font-bold text-primary md:text-[20px]'>Key Features:</h3>
+            <ul className='mb-4'>
+              {project?.keyFeatures?.map((features) => {
+                return (
+                  <li className='mb-1' key={features.id}>
+                    {features.text}
+                  </li>
+                );
+              })}
+            </ul>
+            <h3 className='mb-2 text-[18px] font-bold text-primary md:text-[20px]'>Tech Stack:</h3>
             <div className='mb-4 flex flex-wrap gap-2'>
               {project.skills.map((skill, i) => (
                 <div key={i} className='rounded bg-primary px-2 py-1 text-sm text-background'>
