@@ -4,7 +4,7 @@ This is my personal portfolio project showcasing my skills and projects.
 
 ## Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript, ReactJS, NextJS
+- **Frontend:** HTML, CSS, TypeScript, JavaScript, ReactJS, NextJS
 - **Styling:** CSS, Tailwind CSS
 - **Package Manager:** npm
 - **Version Control:** Git
